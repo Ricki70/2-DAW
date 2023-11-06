@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora</title>
+
+    <style type="text/css">
+        body {
+            background-color: #adadad;
+            color: #000000;
+        }
+        #centrado {
+            background-color: #adadad;
+            margin-top: 50px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        #texto{
+            text-align: center;
+        }
+
+    </style>
+    <script type="text/javascript">
+    window.onload = function () {
+        var botones =document.getElementsByName("b");
+        for (var i=0; i<botones.length; i++){
+            botones[i].onclick = boton;
+        }
+        document.getElementById("CE").onclick = borrar;
+    }
+    function boton(){
+        document.getElementById("texto").value += document.getElementById(this.id).value;
+    }
+    function borrar(){
+        document.getElementById("texto").value = " ";
+    }
+    </script>
+    </head>
+    <body>
+        <div id="centrado">
+            <h1>Botones Calculadora</h1>
+            <h5>Ricardo de Antonio Aguirre</h5>
+            <input type="text" id="texto" value="" readonly/><br><br>
+            <input type="button" id="b1" name="b" value="1" />
+            <input type="button" id="b2" name="b" value="2" />
+            <input type="button" id="b3" name="b" value="3" />
+            <input type="button" id="b4" name="b" value="4" />
+            <input type="button" id="b5" name="b" value="5" />
+            <input type="button" id="b6" name="b" value="6" />
+            <input type="button" id="b7" name="b" value="7" />
+            <input type="button" id="b8" name="b" value="8" />
+            <input type="button" id="b9" name="b" value="9" />
+            <input type="button" id="b0" name="b" value="0" /><br><br>
+            <input type="button" id="CE" name="CE" value="CE" />
+        </div>
+</body>
+</html>

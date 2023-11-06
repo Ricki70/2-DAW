@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd%22%3E
+<html xmlns="http://www.w3.org/1999/xhtml%22%3E
+
+<head>
+    <title>Validacion</title>
+
+    <style> 
+
+        form {margin-left: 0%;}
+        input[type="submit"] {margin-left: 40%; font-size: large};
+
+
+    </style>
+
+    <script language="JavaScript" type="text/javascript" src="cursos.js"> </script>
+
+</head>
+
+<body>
+    <h1 align="center">Validacion de formulario</h1>
+    <form id = "prueba">
+        <label for="nombre"> Nombre: </label> <input type="text" id="nombre"> <br><br>
+
+        <label for="apellido"> Apellido: </label> <input type="text" id="apellido"> <br><br>
+
+        <label for="identificacion"> Identificacion: </label>
+         <select name="identificacion" id="identificacion">
+            <option value="Identificacion">Identificacion</option>
+            <option value="dni">DNI</option>
+            <option value="pasaporte">Pasaporte</option>
+            <option value="nie">NIE</option>
+        </select> <br><br>
+
+        <label for="fijo"> Telefono fijo: </label> <input type="text" id="fijo"> <br><br>
+
+        <label for="movil"> Telefono movil: </label> <input type="text" id="movil"> <br><br>
+
+        <label for="email"> Email:: </label> <input type="text" id="email"> <br><br>
+
+
+        <input type="submit" value="Validar Formulario" textalign="center" id="validar"> 
+
+
+    </form>
+
+</body>

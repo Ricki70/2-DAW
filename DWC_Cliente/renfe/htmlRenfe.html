@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- saved from url=(0105)file:///C:/Users/Teo/Documents/DWC/ejercicios%20alumnos/trenes/ejtreneslauraynerea/renfe_lauraynerea.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<title>Renfe</title>
+        <script src="claseRenfe.js"></script>
+    <script src="scriptRenfe.js"></script>
+		
+	</head>
+	<body>
+		<form name="formulario">
+			Codigo Tren: <input type="text" id="codigo"><br><br>
+			Hora de Salida: <input type="time" id="hsalida"><br><br>
+			Hora de Entrada: <input type="time" id="hentrada"><br><br>
+			Tipo Tren: <input type="radio" id="talvia" name="tipo" value="alvia">Alvia
+					   <input type="radio" id="tave" name="tipo" value="ave">Ave
+					   <input type="radio" id="treg" name="tipo" value="regional">Regional
+					   <input type="radio" id="ttalgo" name="tipo" value="talgo">Talgo<br><br>
+			Destino: <select id="destino">
+						<option value="avila">Avila</option>
+						<option value="barcelona">Barcelona</option>
+						<option value="cuenca">Cuenca</option>
+						<option value="madrid">Madrid</option>
+						<option value="valencia">Valencia</option>
+					 </select><br><br>
+			Circulación: <input type="radio" id="cdia" name="circulacion" value="diaria">Diaria
+					     <input type="radio" id="clab" name="circulacion" value="laborales">Laborables
+					     <input type="radio" id="cfes" name="circulacion" value="festivos">Festivos<br><br>
+			<input type="button" id="alta" value="Dar de alta">
+			<input type="button" id="baja" value="Dar de baja">
+		
+		</form>
+	
+</body></html>

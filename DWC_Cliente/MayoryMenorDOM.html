@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--formulario q pide nombre y edad, lo recoge en dos arrays (nombres y edades) 
+y luego mostrar el nombre del mayor y del menor de los introducidos con su edad-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>FORMULARIO NOMBRE, EDAD Y MOSTRAR</title>
+<script language="JavaScript" type="text/javascript">
+window.onload = function () {
+
+	var nuevo =document.getElementById("guard")
+	nuevo.onclick = guardarnbyedad;
+
+	document.getElementById("most").onclick = mostrarnbyedad;
+}
+
+//declaracion de variablesglobales
+var i=0;
+var nombres = [];//array con nombres
+var edades = [];//array con edades
+
+
+//funcion guardar q lo q hace es
+	function guardarnbyedad(){
+	//1
+		var nombre = document.getElementById("nb").value;
+		nombres.push(nombre);
+		
+	//2	
+		//hace lo mismo pero puede "escribirse de maneras distintas"
+		edades.push(parseInt(document.getElementById("edad").value));
+		alert(nombres[i] + " " + edades[i]);//muestra lo introducido cada vez q introduces algo nuevo
+		i++;//aumenta el indice
+		//limpiar el texto
+		document.getElementById("nb").value="";
+		document.getElementById("edad").value="";
+	}
+
+
+	function mostrarnbyedad(){
+	//declaracion de variables q solo afectan a la funcion no son globales
+			var posicionmayor = 0;			
+			var posicionmenor = 100;
+			var nbmayor;
+			var nbmenor;
+		for (i=0;i<edades.length;i++){
+		//recorre el array de cero, comprueba q el incice no supere el numero de elementos del array 
+		//y luego aumentas el indice xq si no serias un bucle infinito
+					
+			if(edades[i] > posicionmayor){
+			//si el valor de posicionmayor es menor al del valor de un elemnto del array
+			posicionmayor = edades[i];
+			//el posicionmayor recoge este valor
+			nbmayor = nombres[i];
+			//y el nbmayor= recoge el valor del elemnto del array de nombres en esa misma posicion
+			}
+			
+			if(edades[i] < posicionmenor){
+			//si el valor del elemnto de esa posicion marcada por el incice i del array es menor a la posicionmenor
+			posicionmenor = edades[i];
+			//y posicionmenor q recoja el valor de ese elemento del array
+			nbmenor = nombres[i];
+			//y declara una variable para el nombre del menor q recoja el valor del nombre en la posicion i
+			}
+		}
+		alert("el mayor se llama: " + nbmayor + " y tiene :" + posicionmayor + " años " + " y el menor se llama: " + nbmenor + " y sus años son: "+ posicionmenor);
+		//muestra el nombre y edades del mayor y del menor
+	}
+</script>
+</head>
+<body>
+	<form>
+		<table>
+			<tr>
+				<td>Nombre:</td>
+				<td><input type="text" id="nb"/></td>
+			</tr>
+			<tr>
+				<td>escribe en numeros tu edad:</td>
+				<td><input type="text" id="edad"/></td>
+			</tr>
+			<tr>
+				<td><input type="button" id="guard" value="Guardar" /></td>
+				<td><input type="button" id="most" value="Mostrar"/></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

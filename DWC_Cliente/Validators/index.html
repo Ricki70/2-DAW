@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulario de validaciones</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilo.css">
+    <script type="text/javascript" src="validaciones.js"></script>
+</head>
+
+<body>
+    <h1>Formulario</h1>
+    <form action="post">
+    <table id="tabla">
+        <tr>
+            <td class="celda">
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required style="width: 150px;">
+            </td>
+            <td class="celda">
+                <label for="apellido">Apellidos</label>
+                <input type="text" name="apellidos" id="apellidos" maxlength="45" placeholder="Apellido Apellido" required style="width: 300px;">
+            </td>
+        </tr>
+        <tr>
+            <td class="celda">
+                <select name="metodoIdentificacion" id="metodoIdentificacion" required>
+                    <option value="identificacion:">Identificacion:</option>
+                    <option value="dni">DNI</option>
+                    <option value="pasaporte">Pasaporte</option>
+                    <option value="nie">NIE</option>
+                </select>
+            </td>
+            <td id="identificacion">
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="celda">
+                <label id="valorEdad" style="position: relative; left: 332px;">0 años</label><br>
+                <label for="rangoEdad">Edad: </label>
+                <input type="range" name="rangoEdad" id="rangoEdad" min="0" max="100" step="1" value = "0" list="marcas" required style="width: 585px;">
+                <datalist id="marcas">
+                    <option value="0" label="0">
+                    <option value="25" label="25">
+                    <option value="50" label="50">
+                    <option value="75" label="75">
+                    <option value="100" label="100">
+                </datalist>
+            </td>
+        </tr>
+        <tr>
+            <td class="celda">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="ejemplo@ejemplo.com" required>
+            </td>
+            <td class="celda">
+                <label for="fecha">Fecha de nacimiento</label>
+                <input type="date" name="fecha" id="fecha" required>
+            </td>
+        </tr>
+        <tr>
+            <td class="celda">
+                <label for="telefono">Telefono</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="9 numeros" required>
+                <label for="checkTf">Tienes Tf fijo?</label>
+                <input type="checkbox" name="checkTf" id="checkTf" required>
+            </td>
+            <td id="tf">
+            </td>
+        </tr>
+        <tr>
+            <td class="celda">
+                <label for="color">Color Favorito?</label>
+                <input type="color" name="color" id="color" required>
+            </td>
+            <td class="celda">
+                <label for="hermanos">Cuantos Hermanos Tienes?</label>
+                <input type="number" name="hermanos" id="hermanos" required>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="celda" style="text-align: center;">
+                <input type="button" name="validar" id="validar" value="Validar datos">
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+
+</html>

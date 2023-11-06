@@ -1,0 +1,13 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000000;
+    background-color: #EEEEEE;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+td.celda{
+    padding: 10px;
+}
