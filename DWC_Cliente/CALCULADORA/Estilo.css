@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+body {
+	background-color: rgb(100, 100, 100);
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 50px;
+	font-weight: bold;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 5%;
+	color: white;
+}
+
+h6 {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 15px;
+	color: white;
+}
+
+table {
+	border: 1px solid rgb(100, 100, 100);
+	border-collapse: collapse;
+	text-align: center;
+	margin: 0 auto;
+}
+
+tr.filas {
+	border: 1px solid rgb(100, 100, 100);
+	height: 100px;
+}
+
+td.columnas {
+	border: 1px solid rgb(100, 100, 100);
+	width: 100px;
+	height: 100px;
+}
+
+
+input.boton {
+	background-color: #202020;
+	border: none;
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	height: 100%;
+	width: 100%;
+	transition: 0.15s;
+}
+
+input.boton:hover{
+	box-shadow: inset 0 0 0 2em #808080;
+}
+
+input.numpad {
+	background-color: #000000;
+	border: none;
+	color: #fffdfd;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	height: 100%;
+	width: 100%;
+	transition: 0.15s;
+}
+
+input.numpad:hover{
+	box-shadow: inset 0 0 0 2em #808080;
+}
+
+td#igual{
+	padding-top: 5px;
+	height: 50px;
+}
+
+input#esIgual{
+	background-color: #00a187;
+	border: none;
+	color: #fffdfd;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	height: 100%;
+	width: 100%;
+	border-radius: 15px;
+	transition: 0.15s;
+}
+
+input#esIgual:hover{
+	box-shadow: inset 0 0 0 2em #006151;
+}
+
+#cabecera {
+	border: none;
+}
+
+#texto {
+	width: 99%;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	border: none;
+	text-align: right;
+	font-size: 40px;
+	background-color: #b8b8b8;
+	color: rgb(0, 0, 0);
+}
+

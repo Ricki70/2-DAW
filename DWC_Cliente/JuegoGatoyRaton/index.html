@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Juego</title>
+</head>
+<style type="text/css">
+	body
+	{
+		background: #666666;
+	}
+	#titulo 
+	{
+		text-align: center;
+		font-family: Agency FB;
+		font-size: 60px;
+		text-transform: uppercase;
+	}
+	#cuenta
+	{
+		font-size: 40px;
+		font-family: Agency FB;
+		text-align: center;
+	}
+	#tablero
+	{
+		position: relative;
+		width: 1000px;
+		height: 500px;
+		border: none;
+		top: 50px;
+		left: 410px;
+		background: #AAAAAA;
+	}
+</style>
+<script type="text/javascript" src=juegoProc.js></script>
+<body>
+<div id="titulo">
+	Encuentra al  raton</br>
+	<input type="text" id="cuenta" value="00:10" size="10" disabled/>
+</div>
+<div id="tablero">
+	<img src="Imagenes/rejilla.png" style="position:absolute;" width="1050px" height="550px">
+	<img src="Imagenes/1.png" id="buscar" style="position:absolute;" width="50px" height="50px" hidden="true">
+	<img src="Imagenes/2.png" id="objetivo" style="position:absolute;" width="50px" height="50px">
+</div><br>
+<p style="margin-top: 125px; font-size: 35px; font: bold; text-align: center;" >presiona &lt;ENTER&gt; para empezar la partida</p>
+
+
+
+</body>
+</html>

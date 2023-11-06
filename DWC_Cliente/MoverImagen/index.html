@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>mover imagen</title>
+
+        <script type="text/javascript">
+        window.onload = function () {
+            document.onclick = moverImagen;
+        }
+
+        function moverImagen(elEvento) {
+            var evento = elEvento || window.event;
+            var imagen = document.getElementById("imagen");
+
+            imagen.style.left = evento.clientX - 50;
+            imagen.style.top = evento.clientY - 50;
+        }
+        </script> 
+        
+        <style type="text/css">
+            #imagen{
+                height: 100px;
+                width: 100px;
+            }
+        </style>
+            
+	</head>
+	<body>
+	
+		<img src="Imagenes/x.png" style='position:relative;left:0px;top:0px;'id="imagen"/>	
+	<body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Concesionario</title>
+<link rel="stylesheet" href="./estilo.css">
+<script type="text/javascript" src="concesionarioProc.js"></script> 
+<body>
+<form>
+	<div id="principal">
+		<h1>Concesionario</h1>
+		<h5>Ricardo de Antonio Aguirre</h5>
+	<table>
+		<tr>
+			<td>
+				<label>Marca:</label><br/>
+				<select id="marca" >
+                    <option>Selecciona Marca</option>
+					<option>Peugeot</option>
+					<option>Citroen</option>
+					<option>Nissan</option>
+				</select>
+			</td>
+			<td>
+				<label>Extras:</label><br/>
+				<div>
+				<input type="radio" name="extras" id="conExtras" value="con" >Con Extras <br/>
+				<input type="radio" name="extras" id="sinExtras" value="sin"  checked>Sin Extras
+				</div>
+			</td>
+			<td rowspan="2"><img id="imagenMarca" src="" width="200"></td>
+			
+		</tr>
+		<tr>
+			<td>
+				<label>Tipo:</label><br/>
+				<select id="tipo" >
+				</select>
+			</td>
+			<td>
+				<label>Color:</label><br/>
+				<div>
+				<input type="radio" name="color" id="rojo" value="rojo"  checked>Rojo <br/>
+				<input type="radio" name="color" id="azul" value="azul" >Azul <br/>
+				<input type="radio" name="color" id="verde" value="verde" >Verde <br/>
+				<input type="radio" name="color" id="blanco" value="blanco" >Blanco <br/>
+				<input type="radio" name="color" id="negro" value="negro" >Negro
+				
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2"><img id="imagenTipo" src="" width="200"></td>
+			<td id="celda"><label id="label"></label></td>
+		</tr>
+	</table>
+	</div>
+</form>
+</body>
+</html>

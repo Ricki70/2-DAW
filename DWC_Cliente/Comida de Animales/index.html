@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8" />
+        <title>Comida de Animales</title>
+        <link rel="stylesheet" href="./estilo.css">
+		<script type="text/javascript" src="indexProc.js"></script> 
+    </head>
+
+    <body>
+        <h1>Comida de Animales</h1>
+        <h5>Ricardo de Antonio Aguirre</h5>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <label>Animal:</label><br/>
+                        <select id="animal" >
+                            <option value="borrar">Selecciona una mascota</option>
+                            <option value="perro">Perro</option>
+                            <option value="gato">Gato</option>
+                        </select>
+                    </td>
+                    
+                    <td rowspan="2">
+                        <img id="imagenAnimal" src="" width="200">
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <label>Marca:</label><br/>
+                        <select id="marca" >
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        Ver precio<input id = "mostrar" type = "checkbox" name = "precio" value = "Ver precio">
+                    </td>
+                    <td id="celda">
+                        Precio: <label id="precio"></label>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html> 

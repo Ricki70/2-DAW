@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="ClaseLibro.js"></script>
+        <script type="text/javascript" src="ScriptLibro.js"></script>
+        <title>LIBROS</title>
+        <script language="JavaScript" type="text/javascript">
+			
+        </script>
+    </head>
+
+    <body>
+        
+            <div style="float: left; margin-right: 10%;">
+                <p>TITULO: <input type="text" id="titulo" /></p>
+                <p>AUTOR: <input type="text" id="autor" /></p>
+                <p>GENERO:
+                    <input type="radio" id="genero" name="genero" value="negro">NEGRO
+                    <input type="radio" id="genero" name="genero" value="historico">HISTORICO
+                    <input type="radio" id="genero" name="genero" value="romantico">ROMANTICO
+                  </p>  
+                  <p>Nº EJEMPLARES: <input type="number" id="ejem" min="0" /></p>
+                  <p> <input type="button" id="alta" value="ALTA"/></p>
+                  <p><input type="button" id="btnG" value="MOSTRAR POR GENERO"/></p>
+                  <p> <input type="button" id="btnGA" value="MOSTRAR POR GENERO Y AUTOR"/></p>
+                  <p> <input type="button" id="prestamo" value="PRESTAMO"/></p>
+                  <p> <input type="button" id="devolucion" value="DEVOLUCION"/></p>
+            </div>
+            <div>
+                <p>TITULOS:</p>
+                <select  name="selectTitulo" id="selectTitulo" size=6 style="width:100px">
+                </select>
+            </div>
+       
+    </body>
+</html>

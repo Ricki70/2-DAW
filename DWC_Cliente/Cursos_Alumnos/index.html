@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Examen</title>
+<style>
+	table, tr, td {border:2px solid black; text-align:center; border-collapse:collapse;}
+	td, tr {width:200px; height:150px;}
+	div {text-align:center;}
+</style>
+<script language="JavaScript" type="text/javascript" src="asignaturasProc.js"></script>
+
+<body>
+<form>
+	<table>
+		<tr>
+			<td>
+			<label>Cursos:</label><br/>
+                        <select id="cursos" >
+                            <option>Selecciona un curso</option>
+                            <option value="1wem">1º WEM</option>
+                            <option value="2wem">2º WEM</option>
+							<option value="3wem">3º WEM</option>
+                        </select>
+			
+			</td>
+			<td>
+			
+			<div>
+			<label>Nº Alumnos:</label><br/>
+				<input type="text" id="num"  value="" disabled readonly> <br>
+			<label>Aprobados?:</label><br/>	
+				<input type="text" id="aprobados"  value="" disabled> <br>
+			</div>
+			
+		</tr>
+		<tr>
+			<td>
+				<label>Asgnaturas:</label><br/>
+                        <select id="asignaturas" >
+                        </select>
+			</td>
+			<td>
+				<h3>porcentajes</h3>
+				<div>
+					<input type="radio" id="A" name="notas" value="A">APROBADOS <br>
+					<input type="radio" id="S" name="notas" value="S">SUSPENSOS <br>
+					
+				</div>
+			</td>
+			<td>
+			<h3>resultado porcentajes</h3>
+				<div>
+                    <label id="resultado"></label>
+			</div>
+			</td>
+		</tr>
+		<tr>
+				
+			
+		</tr>
+	</table>
+</form>
+</body>
+</html>
