@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="estilo.css"/>
+</head>
+<body>
+
+    <form action="pizzaProc.jsp" method="get">
+
+        <h1>CREA UNA PIZZA</h1>
+
+        <label class="titulo" for="nombrePizza">Nombre Pizza</label>
+            <input class="texto" type="text" id="nombrePizza" name="nombrePizza" required/>
+
+        <br><br>
+
+        <label class="titulo" for="pizzeria">Pizzeria</label>      
+            <input class="texto" type="text" id="pizzeria" name="pizzeria" required>
+
+        <br><br>
+
+        <label class="titulo" for="tamaño">Tamaño</label><br>
+            <input type="radio" name="tamaño" value="grande" required>
+            <label for="grande">Grande</label><br>
+
+            <input type="radio" name="tamaño" value="mediana" required>
+            <label for="mediana">Mediana</label><br>
+
+            <input type="radio" name="tamaño" value="pequeña" required>
+            <label for="pequeña">Pequeña</label><br>
+
+        <br>
+
+        <label class="titulo" for="ingredientes">ingredientes</label><br>
+            <input type="checkbox" name="ingredientes" value="queso">
+            <label for="queso">Queso</label><br>
+
+            <input type="checkbox" name="ingredientes" value="tomate">
+            <label for="tomate">Tomate</label><br>
+
+            <input type="checkbox" name="ingredientes" value="bacon">
+            <label for="bacon">Bacon</label><br>
+
+            <input type="checkbox" name="ingredientes" value="cebolla">
+            <label for="cebolla">Cebolla</label><br>
+
+            <input type="checkbox" name="ingredientes" value="huevo">
+            <label for="huevo">Huevo</label><br>
+
+            <input type="checkbox" name="ingredientes" value="champiñon">
+            <label for="champiñon">Champiñon</label><br><br>
+
+        <input type="submit" name="enviar" value="Enviar" id="enviar">
+
+    </form>
+
+</body>
+</html>

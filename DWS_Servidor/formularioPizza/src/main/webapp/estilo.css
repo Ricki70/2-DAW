@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+body {
+    background-color: #252525;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+input.texto {
+    border: 1px solid #ffffff;
+    background-color: #999999;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+input#enviar{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #141414;
+    background-color: #999999;
+    color: white;
+    font-size: 20px;
+}
+
+input {
+    width: 20px;
+    height: 20px;
+}
+
+label.titulo{
+    font-size: 24px;
+    font-weight: bold;
+}
+p{
+    font: white;
+}
+
+a{
+    color: white;
+}
+a::after{
+    color: lightgrey;
+    font-weight: underline;
+}
