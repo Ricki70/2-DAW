@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>hoteles</title>
+</head>
+<body>
+	<form action="HotelesProc.jsp" method="post">
+		<p>¿En que hotel te quieres hospedar?</p>
+		<input type="radio" name="hotel" value="HV" checked>Hotel Villamar <br>
+		<input type="radio" name="hotel" value="HNH"> Hotel NH <br>
+		<input type="radio" name="hotel" value="HCB"> Hotel CasaBlanca <br>
+		<p>¿En que regimen te quieres hospedar?</p>
+		<input type="radio" name="regimen" value="PC" checked>Pension completa <br>
+		<input type="radio" name="regimen" value="MP"> Media pension <br>
+		<input type="radio" name="regimen" value="AD"> Alojamiento y desayuno <br>
+		<p>¿Que extras quieres ?</p>
+			<input type="checkbox" name="parking" value="parking" > con parking <br>
+			<input type="checkbox" name="spa" value="spa" > con spa <br>
+		<p>¿Cuantos dias te vas a hospedar?
+		<input type="number" name="dias" min="0" max="30" /></p>
+		<p><input type="submit" name="enviar" value="enviar datos"/></p>
+	</form>	
+</body>
+</html>
