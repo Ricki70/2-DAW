@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="ClaseMusica.js"></script>
+        <script type="text/javascript" src="ScriptMusica.js"></script>
+        <title>MUSICA</title>
+        
+    </head>
+
+    <body>
+        
+            <div style="float: left; margin-right: 10%;">
+                <p>ID: <input type="text" id="id" disabled /></p>
+                <p>GRUPO: <input type="text" id="grupo" /></p>
+                <p>ESTILO:
+                    <input type="radio"  name="estilo" value="Rock" id="Rock">ROCK
+                    <input type="radio"  name="estilo" value="Pop" id="Pop">POP
+                    <input type="radio" name="estilo" value="Rap" id="Rap">RAP
+                  </p>  
+                  <p>Nº EJEMPLARES: <input type="text" id="ejem"   /></p>
+				  <p>PRECIO: <input type="text" id="precio" /></p>
+                  <p> <input type="button" id="alta" value="ALTA"/></p>
+                  <p><input type="button" id="vender" value="VENDER"/></p>
+				  <p>TOTAL VENTA: <input type="text" id="venta" disabled /></p>
+                  <p> <input type="button" id="modificar" value="MODIFICAR"/></p>
+                  <p> <input type="button" id="listado" value="LISTADO"/></p>
+                  
+            </div>
+            <div>
+                <p>CD'S:</p>
+                <select  name="selectCd" id="selectCd" size=6 style="width:100px">
+                </select>
+            </div>
+       
+    </body>
+</html>

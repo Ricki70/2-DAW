@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Examen - Ricardo de Antonio Aguirre</title>
+<style>
+	table, tr, td {border:2px solid black; text-align:center; border-collapse:collapse;}
+	td, tr {width:200px; height:150px;}
+	div {text-align:left;}
+</style>
+<script type="text/javascript" src="scriptFrutas.js"></script>
+</head>
+    
+<body>
+<form>
+    <h3>Examen DWC - Ricardo de Antonio Aguirre</h3>
+	<table>
+		<tr>
+			<td>
+			<h3>FRUTAS</h3>
+       		<select name="frutas" id="frutas">
+				<option>Seleciona una Fruta...</option>
+				<option value="Peras">Peras</option>
+				<option value="Manzanas">Manzanas</option>
+				<option value="Plátanos">Plátanos</option>
+				<option value="Kiwis">Kiwis</option>
+				
+			</select>
+			
+			</td>
+			<td>
+			<h3>Introduzca peso</h3>
+			<div>
+				<h3> precio:</h3><input type="text" id="precio"  value="" disabled> <br>
+				<h3> peso:</h3><input type="text" id="peso"  value=""> <br>
+			</div>
+			</td>
+			<td rowspan="2"><input type="button" id="total"  value="Total"> <br></td>
+			<td rowspan="2"><h3>Precio total:</h3><input type="text" id="Ptotal"  value="" disabled> <br>
+			<h3>Entrega:</h3><input type="text" id="monedas"  value="" disabled> <br>
+			<h3>Cambio:</h3><input type="text" id="cambio"  value="" disabled> <br></td>
+		</tr>
+		<tr>
+			<td>
+				<h3>Tipos de Fruta</h3>
+				<select id="variedad" name="variedad">
+				</select>
+			</td>
+			<td>
+				<h3>FORMA DE PAGO</h3>
+				<div>
+					<input type="radio" id="T" name="fpago" value="T">TARJETA <br>
+					<input type="radio" id="E" name="fpago" value="E">EFECTIVO <br>
+				</div>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				
+			</td>
+			<td>
+				<h3>Nº de Tarjeta:</h3><input type="text" id="Ntarjeta"  value="" disabled> <br>
+				<input type="button" id="Pago" value="Pagar" disabled>
+			</td>
+			
+		</tr>
+	</table>
+</form>
+</body>
+</html>
